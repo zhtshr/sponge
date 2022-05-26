@@ -11,12 +11,15 @@
 class ByteStream {
   private:
     // Your code here -- add private members as necessary.
+    std::string s;
+    int cap, w_num, r_num;
 
     // Hint: This doesn't need to be a sophisticated data structure at
     // all, but if any of your tests are taking longer than a second,
     // that's a sign that you probably want to keep exploring
     // different approaches.
 
+    bool _end{};
     bool _error{};  //!< Flag indicating that the stream suffered an error.
 
   public:
